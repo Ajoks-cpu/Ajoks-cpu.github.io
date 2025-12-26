@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - MultiGrafGO</title>
+
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="../styles/bootstrap-5.3.8-dist/css/bootstrap-grid.min.css">
+    <!-- Link ke file CSS terpisah -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- Bootstrap Icons untuk ikon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm full-width-navbar sticky-top">
+        <div class="container-fluid"> <!-- Ubah ke container-fluid untuk full-width -->
+            <span class="navbar-brand">MultiGrafGO</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" class="navbar-nav" id="navbarNav"> <!-- Tambah justify-content-end untuk susun ke kanan -->
+                <a class="nav-link active" href="/index.html">Beranda</a>
+                <a class="nav-link" href="/assets/pages/kalkulator.html">Kalkulator</a>
+                <a class="nav-link" href="/assets/pages/kontak.html">Kontak</a>
+            </div>
+        </div>
+    </nav>  
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p>Jangan ragu untuk bertanya tentang Graf & MultiGraph. Kami di sini untuk membantu Anda!</p>
+            <br>
+            <a href="#kontak-info" class="btn btn-primary btn-lg mt-3">Lihat Kontak <i class="bi bi-arrow-down-circle"></i></a>
+        </div>
+    </section>
+
+    <!-- CONTENT SECTION -->
+    <div id="kontak-info"></div>
+    <section class="py-5">
+        <div class="container">
+            
+
+            <div class="row g-4">
+                <h2 class="text-center mb-5">Anggota Kelompok 8</h2>
+                <!-- Card untuk Triandi -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <img src="../img/josu.png" class="img-fluid mx-auto d-block mb-3" alt="Foto Triandi" style="max-width: 200px; height: auto;">
+                            <h5 class="card-title">Triandi Josua Sitompul</h5>
+                            <p class="card-text">Anggota kelompok yang bertanggung jawab atas pengembangan aplikasi.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card untuk Lora -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <img src="../img/lora.png" class="img-fluid mx-auto d-block mb-3" alt="Foto Lora" style="max-width: 200px; height: auto;">
+                            <h5 class="card-title">Lora Affianti</h5>
+                            <p class="card-text">Kontributor utama dalam desain dan pengujian Website.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card untuk Mayang -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <img src="../img/mayang.png" class="img-fluid mx-auto d-block mb-3" alt="Foto Mayang" style="max-width: 200px; height: auto;">
+                            <h5 class="card-title">Mayang Dewi</h5>
+                            <p class="card-text">Spesialis dalam dokumentasi dan dukungan pengguna.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-5">
+                <h2 class="text-center mb-5">Informasi Kontak Kelompok 8</h2>
+                <!-- Alamat -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-geo-alt-fill text-primary" style="font-size: 3rem;"></i>
+                            <h3 class="card-title mt-3">Alamat</h3>
+                            <p class="card-text">
+                                Politeknik Manufaktur Negeri Bangka Belitung<br>
+                                Jalan Timah Raya, Air Kantung, Sungailiat<br>
+                                Sungailiat, Bangka Belitung 33211 Indonesia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-envelope-fill text-primary" style="font-size: 3rem;"></i>
+                            <h3 class="card-title mt-3">Email</h3>
+                            <p class="card-text">
+                                triandijosua237@gmail.com<br>
+                                mayangdewi@gamil.com<br>
+                                loraaffianti@gmail.com<br>
+                                <small>Kami akan merespons dalam 24 jam</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Telepon -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-telephone-fill text-primary" style="font-size: 3rem;"></i>
+                            <h3 class="card-title mt-3">Telepon & WhatsApp</h3>
+                            <p class="card-text">
+                                WhatsApp: +62 815 9364 587 - Triandi<br>
+                                WhatsApp: +62 812 3456 7890- Lora<br>
+                                WhatsApp: +62 812 3456 7890- Mayang<br>
+                                <small>Hubungi kami kapan saja</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Kontak -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Kirim Pesan Kepada Kami</h3>
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="nama" class="form-label">Nama Lengkap</label>
+                                        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap Anda" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Masukkan email aktif Anda" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subjek" class="form-label">Subjek</label>
+                                    <input type="text" class="form-control" id="subjek" placeholder="Subjek pesan Anda" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pesan" class="form-label">Pesan</label>
+                                    <textarea class="form-control" id="pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Kirim Pesan <i class="bi bi-send"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap.bundle.min.js"></script>
+    <!-- Script sederhana untuk validasi form -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah dikirim. Kami akan menghubungi Anda segera.');
+            // Di sini bisa ditambahkan kode untuk mengirim data ke server
+        });
+    </script>
+</body>
+</html>

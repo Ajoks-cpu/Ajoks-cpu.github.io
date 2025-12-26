@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph</title>
+
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/styles/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Link ke file CSS terpisah -->
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm full-width-navbar sticky-top">
+        <div class="container-fluid"> <!-- Ubah ke container-fluid untuk full-width -->
+            <span class="navbar-brand">MultiGrafGO</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" class="navbar-nav" id="navbarNav"> <!-- Tambah justify-content-end untuk susun ke kanan -->
+                <a class="nav-link active" href="/index.html">Beranda</a>
+                <a class="nav-link" href="/assets/pages/kalkulator.html">Kalkulator</a>
+                <a class="nav-link" href="/assets/pages/kontak.html">Kontak</a>
+            </div>
+        </div>
+    </nav>  
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <h1>Selamat Datang di Website Graph & MultiGraph</h1>
+                <p>Kelompok 8 </p> <br>
+                <a href="#mulai" class="btn btn-primary btn-lg mt-3"> Mulai Eksplorasi <i class="fas fa-rocket"></i></a>
+            </div>
+        </section>
+
+        <!-- CONTENT SECTION -->
+        <div id="mulai"></div>
+            <section class="py-5">
+                <div class="container">
+                    
+<!-- Link Watch Video dengan trigger modal -->
+<a href="#" class="btn-watch-video d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#videoModal">
+    <i class="bi bi-play-circle"></i>
+    <span>Watch Video</span>
+</a>
+
+<!-- Judul -->
+<h2 class="text-center mb-4">Graf & MultiGraph</h2>
+
+<!-- Modal untuk Popup Video -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel">Graf & MultiGraph Video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Embed YouTube Video -->
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/u5OtLdzx2o4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="https://youtu.be/u5OtLdzx2o4?si=FLkjQ1bVvgV1sPW0" target="_blank" class="btn btn-primary">Buka di Tab Baru</a>
+            </div>
+        </div>
+    </div>
+</div>
+                
+                    <div class="row g-4">
+
+                        <!-- SEJARAH GRAF -->
+                        <div class="col-12">
+                            <h3>Sejarah Graf</h3>
+                            <div class="card shadow-sm">
+                                <div class="position-relative">
+                                    <img src="/assets/img/sejarah.png" class="card-img-top" alt="">
+                                    <span class="img-explanation"> 
+                                        Leonhard Euler (1707 – 1783), seorang matematikawan asal Swiss, dianggap sebagai "bapak graf teori" karena memecahkan masalah terkenal yang dikenal dengan nama Masalah Jembatan Königsberg. <br>
+                                        Kota Königsberg (sekarang Kaliningrad, Rusia) memiliki tujuh jembatan yang menghubungkan bagian-bagian kota di sepanjang sungai Pregel.<br><br>
+                                        Ia mengembangkan konsep graf pertama dalam bentuk graf Eulerian, di mana titik-titik (vertex) mewakili bagian kota, dan sisi-sisi (edge) mewakili jembatan. Ia merumuskan bahwa suatu lintasan melalui graf hanya mungkin ada jika setiap titik (vertex) memiliki derajat genap (kecuali mungkin dua titik).
+                                        Ini adalah titik awal lahirnya graf teori.
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <a href="/assets/pages/sejarah.html" class="btn-selengkapnya">Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- GRAF SEDERHANA -->
+                        <div class="col-12">
+                            <h3>Graf Sederhana</h3>
+                            <div class="card shadow-sm">
+                                <div class="position-relative">
+                                    <img src="/assets/img/graphSederhana.png" class="card-img-top" alt="">
+                                    <span class="img-explanation">
+                                        Graf sederhana (simple graph) adalah struktur matematika yang terdiri dari simpul (vertex) dan sisi (edge) yang menghubungkan pasangan simpul.
+                                        Graf ini tidak memiliki loop (sisi yang kembali ke simpul itu sendiri) dan tidak memiliki sisi ganda (dua sisi yang sama antara dua simpul).
+                                        <br>
+                                        <strong>Vertex (Simpul / Node) :</strong> <br>
+                                        Merupakan titik yang menjadi “objek”. <br>
+                                        Contoh: kota, orang, komputer, dll. <br>
+                                        Simbol: V <br>
+                                        Contoh: <br>
+                                        V = {A, B, C, D} <br>
+                                        <strong>Edge (Sisi) :</strong>
+                                        Merupakan garis yang menghubungkan dua simpul. <br>
+                                        Simbol: E <br>
+                                        Contoh: <br>
+                                        E = { (A, B), (B, C) }
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <a href="/assets/pages/graf-sederhana.html" class="btn-selengkapnya">Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MULTIGRAF -->
+                        <div class="col-12">
+                            <h3>MultiGraph</h3>
+                            <div class="card shadow-sm">
+                                <div class="position-relative">
+                                    <img src="/assets/img/multiGraph1.png" class="card-img-top" alt="">
+                                    <span class="img-explanation">
+                                        Multigraf adalah jenis graf dalam teori graf yang mengizinkan adanya lebih dari satu sisi (edge) yang menghubungkan pasangan simpul (vertex) yang sama. <br>                        
+                                        Dengan kata lain, antara dua simpul bisa terdapat dua, tiga, atau lebih sisi paralel. Multigraf juga boleh memiliki loop, yaitu sisi yang berawal dan berakhir pada simpul yang sama (tergantung definisi yang digunakan, tetapi umumnya diizinkan). <br>
+                                        <strong>Contoh Multigraf </strong> <br>
+                                        Bayangkan ada dua kota A dan B. Di antara kedua kota tersebut terdapat tiga jalan berbeda. <br>
+                                        Dalam teori graf: <br>
+                                        A dan B adalah simpul <br>
+                                        Tiga jalan tersebut adalah tiga sisi paralel <br>
+                                        Ini adalah contoh multigraf karena ada lebih dari satu sisi antara dua simpul.
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <a href="/assets/pages/multigraf.html" class="btn-selengkapnya">Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                        <br>
+
+                </div>
+            </section>
+
+        <!-- Script untuk menghentikan video saat modal ditutup -->
+<script>
+    var videoModal = document.getElementById('videoModal');
+    var videoIframe = document.querySelector('#videoModal iframe');
+    var originalSrc = videoIframe.src; // Simpan src asli
+
+    videoModal.addEventListener('show.bs.modal', function () {
+        // Saat modal dibuka, set src kembali ke asli
+        videoIframe.src = originalSrc;
+    });
+
+    videoModal.addEventListener('hidden.bs.modal', function () {
+        // Saat modal ditutup, set src ke kosong untuk menghentikan video
+        videoIframe.src = '';
+    });
+</script>
+        <!-- Bootstrap JS -->
+        <script src="/assets/styles/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
